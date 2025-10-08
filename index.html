@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madurai Catering - Authentic Flavours, Flawless Service | Premium Event Catering</title>
+    <meta name="description" content="Premium catering in Madurai specializing in authentic non-veg dishes. Expert wedding, corporate & private event catering with traditional Chettinad flavors. Book now!">
+    <link rel="canonical" href="https://maduraicatering.com/">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Madurai Catering - Authentic Flavours, Flawless Service">
+    <meta property="og:description" content="Premium catering in Madurai specializing in authentic non-veg dishes for weddings, corporate & private events.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=1200&h=630&fit=crop">
+    <meta property="og:url" content="https://maduraicatering.com/">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-maroon': '#8B0000',
+                        'brand-gold': '#FFD166',
+                        'brand-ivory': '#FFF8F0',
+                        'brand-charcoal': '#1F2937',
+                        'brand-green': '#16A34A'
+                    },
+                    fontFamily: {
+                        'display': ['Playfair Display', 'serif'],
+                        'body': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Madurai Catering",
+        "description": "Premium catering service specializing in authentic Madurai non-vegetarian dishes for weddings, corporate events, and private functions.",
+        "url": "https://maduraicatering.com",
+        "telephone": "+91-9876543210",
+        "email": "info@maduraicatering.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Anna Nagar",
+            "addressLocality": "Madurai",
+            "addressRegion": "Tamil Nadu",
+            "postalCode": "625020",
+            "addressCountry": "IN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "9.9252",
+            "longitude": "78.1198"
+        },
+        "priceRange": "₹₹₹",
+        "servesCuisine": "South Indian",
+        "image": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800&h=600&fit=crop",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "156"
+        },
+        "sameAs": [
+            "https://www.facebook.com/maduraicatering",
+            "https://www.instagram.com/maduraicatering"
+        ]
+    }
+    </script>
+</head>
+<body class="font-body bg-brand-ivory text-brand-charcoal">
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand text-brand-maroon font-display font-bold text-2xl" href="index.html">
+                Madurai Catering
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvas">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title font-display text-brand-maroon">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-brand-green text-white px-4 py-2 rounded-full font-semibold" onclick="openBookingModal()">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section position-relative overflow-hidden">
+        <div class="hero-video-container">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4" type="video/mp4">
+                <source src="https://sample-videos.com/zip/10/webm/SampleVideo_1280x720_1mb.webm" type="video/webm">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content h-screen flex items-center justify-center">
+            <div class="container text-center text-white relative z-10">
+                <div class="max-w-4xl mx-auto fade-in-up">
+                    <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                        Authentic Madurai Catering
+                        <span class="text-brand-gold d-block">Flavours That Make Memories</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed">
+                        From traditional Kari Dosa to aromatic Mutton Biryani — premium catering for weddings, 
+                        corporate events and private functions across Madurai. Taste the difference of hand-roasted Chettinad spices.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button class="btn btn-lg bg-brand-green text-white px-8 py-3 rounded-full font-semibold hover-scale" onclick="openBookingModal()">
+                            Book Catering
+                        </button>
+                        <a href="#menu-preview" class="btn btn-lg btn-outline-light px-8 py-3 rounded-full font-semibold hover-scale">
+                            Explore Menu
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Trust Strip -->
+        <div class="trust-strip bg-white/95 backdrop-blur-sm py-4">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-3 col-6 mb-3 mb-md-0">
+                        <div class="trust-item">
+                            <div class="trust-icon text-brand-maroon mb-2">
+                                <i class="fas fa-leaf fs-2"></i>
+                            </div>
+                            <p class="small font-semibold mb-1">100% Fresh Ingredients</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-3 mb-md-0">
+                        <div class="trust-item">
+                            <div class="trust-icon text-brand-maroon mb-2">
+                                <i class="fas fa-award fs-2"></i>
+                            </div>
+                            <p class="small font-semibold mb-1">Traditional Chettinad Spices</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="trust-item">
+                            <div class="trust-icon text-brand-maroon mb-2">
+                                <i class="fas fa-star fs-2"></i>
+                            </div>
+                            <p class="small font-semibold mb-1">200+ Events in Madurai</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="trust-item">
+                            <div class="trust-icon text-brand-maroon mb-2">
+                                <i class="fas fa-phone fs-2"></i>
+                            </div>
+                            <p class="small font-semibold mb-1">
+                                <a href="tel:+919876543210" class="text-decoration-none text-brand-charcoal">
+                                    +91 98765 43210
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Preview Section -->
+    <section id="menu-preview" class="py-16 bg-white">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-4xl md:text-5xl font-bold text-brand-maroon mb-4">
+                    Signature Madurai Specialities
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Discover our authentic non-vegetarian dishes crafted with traditional recipes passed down through generations
+                </p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Kari Dosa -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="dish-card bg-white rounded-2xl overflow-hidden shadow-lg hover-lift">
+                        <div class="dish-image-container position-relative">
+                            <img src="https://images.unsplash.com/photo-1630383249896-424e482df921?w=800&h=600&fit=crop" 
+                                 alt="Kari Dosa - Traditional Madurai mutton dosa with spiced curry filling" 
+                                 class="w-100 h-64 object-cover dish-image" 
+                                 loading="lazy">
+                            <div class="dish-overlay">
+                                <button class="btn btn-sm bg-white text-brand-maroon px-4 py-2 rounded-full font-semibold" 
+                                        onclick="openDishModal('kari-dosa')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-2xl font-bold text-brand-maroon mb-3">Kari Dosa</h3>
+                            <p class="text-gray-600 mb-4">
+                                Thin dosa layered with slow-cooked mutton curry; the Madurai street legend served fresh at your event.
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xl font-bold text-brand-gold">From ₹200 / plate</span>
+                                <button class="btn bg-brand-green text-white px-4 py-2 rounded-full font-semibold" 
+                                        onclick="openBookingModal('kari-dosa')">
+                                    Book This Dish
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mutton Sukka -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="dish-card bg-white rounded-2xl overflow-hidden shadow-lg hover-lift">
+                        <div class="dish-image-container position-relative">
+                            <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=800&h=600&fit=crop" 
+                                 alt="Mutton Sukka - Dry-style Chettinad mutton with roasted masalas" 
+                                 class="w-100 h-64 object-cover dish-image" 
+                                 loading="lazy">
+                            <div class="dish-overlay">
+                                <button class="btn btn-sm bg-white text-brand-maroon px-4 py-2 rounded-full font-semibold" 
+                                        onclick="openDishModal('mutton-sukka')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-2xl font-bold text-brand-maroon mb-3">Mutton Sukka</h3>
+                            <p class="text-gray-600 mb-4">
+                                Succulent mutton tossed with roasted coconut & spices for a robust dry masala experience.
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xl font-bold text-brand-gold">From ₹280 / plate</span>
+                                <button class="btn bg-brand-green text-white px-4 py-2 rounded-full font-semibold" 
+                                        onclick="openBookingModal('mutton-sukka')">
+                                    Book This Dish
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chicken Chettinad -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="dish-card bg-white rounded-2xl overflow-hidden shadow-lg hover-lift">
+                        <div class="dish-image-container position-relative">
+                            <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=800&h=600&fit=crop" 
+                                 alt="Chicken Chettinad - Classic Chettinad chicken in robust roasted spices" 
+                                 class="w-100 h-64 object-cover dish-image" 
+                                 loading="lazy">
+                            <div class="dish-overlay">
+                                <button class="btn btn-sm bg-white text-brand-maroon px-4 py-2 rounded-full font-semibold" 
+                                        onclick="openDishModal('chicken-chettinad')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-2xl font-bold text-brand-maroon mb-3">Chicken Chettinad</h3>
+                            <p class="text-gray-600 mb-4">
+                                Classic Chettinad chicken in robust roasted spices with traditional aromatics.
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xl font-bold text-brand-gold">From ₹250 / plate</span>
+                                <button class="btn bg-brand-green text-white px-4 py-2 rounded-full font-semibold" 
+                                        onclick="openBookingModal('chicken-chettinad')">
+                                    Book This Dish
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mutton Biryani -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="dish-card bg-white rounded-2xl overflow-hidden shadow-lg hover-lift">
+                        <div class="dish-image-container position-relative">
+                            <img src="https://images.unsplash.com/photo-1563379091339-03246963d84a?w=800&h=600&fit=crop" 
+                                 alt="Mutton Biryani - Aromatic biryani with short-grain seeraga samba rice" 
+                                 class="w-100 h-64 object-cover dish-image" 
+                                 loading="lazy">
+                            <div class="dish-overlay">
+                                <button class="btn btn-sm bg-white text-brand-maroon px-4 py-2 rounded-full font-semibold" 
+                                        onclick="openDishModal('mutton-biryani')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-2xl font-bold text-brand-maroon mb-3">Mutton Biryani (Seeraga Samba)</h3>
+                            <p class="text-gray-600 mb-4">
+                                Aromatic biryani with short-grain seeraga samba rice and tender mutton pieces.
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xl font-bold text-brand-gold">From ₹320 / plate</span>
+                                <button class="btn bg-brand-green text-white px-4 py-2 rounded-full font-semibold" 
+                                        onclick="openBookingModal('mutton-biryani')">
+                                    Book This Dish
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vanjaram Meen Varuval -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="dish-card bg-white rounded-2xl overflow-hidden shadow-lg hover-lift">
+                        <div class="dish-image-container position-relative">
+                            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&h=600&fit=crop" 
+                                 alt="Vanjaram Meen Varuval - Seer fish fry with Chettinad spices" 
+                                 class="w-100 h-64 object-cover dish-image" 
+                                 loading="lazy">
+                            <div class="dish-overlay">
+                                <button class="btn btn-sm bg-white text-brand-maroon px-4 py-2 rounded-full font-semibold" 
+                                        onclick="openDishModal('vanjaram-fish')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-2xl font-bold text-brand-maroon mb-3">Vanjaram Meen Varuval</h3>
+                            <p class="text-gray-600 mb-4">
+                                Crisp coastal-style seer fish fry with authentic Chettinad spice blend.
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xl font-bold text-brand-gold">From ₹350 / plate</span>
+                                <button class="btn bg-brand-green text-white px-4 py-2 rounded-full font-semibold" 
+                                        onclick="openBookingModal('vanjaram-fish')">
+                                    Book This Dish
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Parotta with Salna -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="dish-card bg-white rounded-2xl overflow-hidden shadow-lg hover-lift">
+                        <div class="dish-image-container position-relative">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=800&h=600&fit=crop" 
+                                 alt="Parotta with Salna - Layered parotta with rich spicy gravy" 
+                                 class="w-100 h-64 object-cover dish-image" 
+                                 loading="lazy">
+                            <div class="dish-overlay">
+                                <button class="btn btn-sm bg-white text-brand-maroon px-4 py-2 rounded-full font-semibold" 
+                                        onclick="openDishModal('parotta-salna')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display text-2xl font-bold text-brand-maroon mb-3">Parotta with Salna</h3>
+                            <p class="text-gray-600 mb-4">
+                                Layered parotta paired with rich, spicy salna gravy - a perfect combination.
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xl font-bold text-brand-gold">From ₹180 / plate</span>
+                                <button class="btn bg-brand-green text-white px-4 py-2 rounded-full font-semibold" 
+                                        onclick="openBookingModal('parotta-salna')">
+                                    Book This Dish
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="menu.html" class="btn btn-lg btn-outline-brand-maroon px-8 py-3 rounded-full font-semibold hover-scale">
+                    View Complete Menu
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Types Section -->
+    <section class="py-16 bg-gradient-to-b from-brand-ivory to-white">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-4xl md:text-5xl font-bold text-brand-maroon mb-4">
+                    Events We Cater
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    From intimate gatherings to grand celebrations, we bring authentic Madurai flavors to every occasion
+                </p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="event-card bg-white rounded-2xl p-6 shadow-lg hover-lift text-center">
+                        <div class="event-icon text-brand-maroon mb-4">
+                            <i class="fas fa-heart text-5xl"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold mb-3">Weddings</h3>
+                        <p class="text-gray-600 mb-4">Grand wedding feasts with traditional menu options for 200-1000+ guests</p>
+                        <a href="events.html#weddings" class="btn btn-sm btn-outline-brand-maroon px-4 py-2 rounded-full">
+                            View Packages
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="event-card bg-white rounded-2xl p-6 shadow-lg hover-lift text-center">
+                        <div class="event-icon text-brand-maroon mb-4">
+                            <i class="fas fa-building text-5xl"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold mb-3">Corporate</h3>
+                        <p class="text-gray-600 mb-4">Professional catering for meetings, conferences, and corporate events</p>
+                        <a href="events.html#corporate" class="btn btn-sm btn-outline-brand-maroon px-4 py-2 rounded-full">
+                            View Packages
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="event-card bg-white rounded-2xl p-6 shadow-lg hover-lift text-center">
+                        <div class="event-icon text-brand-maroon mb-4">
+                            <i class="fas fa-pray text-5xl"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold mb-3">Religious Functions</h3>
+                        <p class="text-gray-600 mb-4">Sacred occasion catering with appropriate menu segregation options</p>
+                        <a href="events.html#religious" class="btn btn-sm btn-outline-brand-maroon px-4 py-2 rounded-full">
+                            View Packages
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="event-card bg-white rounded-2xl p-6 shadow-lg hover-lift text-center">
+                        <div class="event-icon text-brand-maroon mb-4">
+                            <i class="fas fa-birthday-cake text-5xl"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold mb-3">Private Parties</h3>
+                        <p class="text-gray-600 mb-4">Birthdays, anniversaries, and intimate celebrations made special</p>
+                        <a href="events.html#private" class="btn btn-sm btn-outline-brand-maroon px-4 py-2 rounded-full">
+                            View Packages
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-brand-maroon text-white">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">
+                    What Our Clients Say
+                </h2>
+                <p class="text-xl opacity-90 max-w-3xl mx-auto">
+                    Hear from families and businesses who trusted us with their special occasions
+                </p>
+            </div>
+            
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card text-center">
+                                    <div class="stars mb-4">
+                                        <i class="fas fa-star text-brand-gold"></i>
+                                        <i class="fas fa-star text-brand-gold"></i>
+                                        <i class="fas fa-star text-brand-gold"></i>
+                                        <i class="fas fa-star text-brand-gold"></i>
+                                        <i class="fas fa-star text-brand-gold"></i>
+                                    </div>
+                                    <blockquote class="text-xl md:text-2xl mb-6 font-light italic">
+                                        "The Kari Dosa at our wedding was absolutely incredible! Our guests are still talking about it. 
+                                        Madurai Catering made our special day even more memorable with authentic flavors."
+                                    </blockquote>
+                                    <cite class="font-semibold">- Priya & Rajesh, Wedding Reception</cite>
+                                    <p class="small opacity-75 mt-2">500 guests • March 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card text-center">
+                                    <div class="stars mb-4">
+                                        <i class="fas fa-star text-brand-gold"></i>
+                                        <i class="fas fa-star text-brand-gold"></i>
+                                        <i class="fas fa-star text-brand-gold"></i>
+                                        <i class="fas fa-star text-brand-gold"></i>
+                                        <i class="fas fa-star text-brand-gold"></i>
+                                    </div>
+                                    <blockquote class="text-xl md:text-2xl mb-6 font-light italic">
+                                        "Professional service and exceptional food quality. The Mutton Biryani was perfectly spiced. 
+                                        Our corporate event was a huge success thanks to Madurai Catering."
+                                    </blockquote>
+                                    <cite class="font-semibold">- Suresh Kumar, Tech Solutions Pvt Ltd</cite>
+                                    <p class="small opacity-75 mt-2">200 guests • February 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card text-center">
+                                    <div class="stars mb-4">
+                                        <i class="fas fa-star text-brand-gold"></i>
+                                        <i class="fas fa-star text-brand-gold"></i>
+                                        <i class="fas fa-star text-brand-gold"></i>
+                                        <i class="fas fa-star text-brand-gold"></i>
+                                        <i class="fas fa-star text-brand-gold"></i>
+                                    </div>
+                                    <blockquote class="text-xl md:text-2xl mb-6 font-light italic">
+                                        "Authentic Madurai taste at its best! The Chicken Chettinad reminded me of my grandmother's cooking. 
+                                        Perfect for our family reunion."
+                                    </blockquote>
+                                    <cite class="font-semibold">- Meera Devi, Family Function</cite>
+                                    <p class="small opacity-75 mt-2">80 guests • January 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-brand-gold to-yellow-400 text-brand-charcoal">
+        <div class="container text-center">
+            <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">
+                Ready to Taste Madurai?
+            </h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">
+                Book a tasting or request a custom event quote now. Let us bring the authentic flavors of Madurai to your special occasion.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="btn btn-lg bg-brand-maroon text-white px-8 py-3 rounded-full font-semibold hover-scale" onclick="openBookingModal()">
+                    Book Catering Now
+                </button>
+                <a href="tel:+919876543210" class="btn btn-lg btn-outline-brand-charcoal px-8 py-3 rounded-full font-semibold hover-scale">
+                    Call +91 98765 43210
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-charcoal text-white py-16">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="font-display text-2xl font-bold text-brand-gold mb-4">Madurai Catering</h3>
+                    <p class="mb-4 opacity-90">
+                        Authentic Madurai flavors for your special occasions. Premium catering services 
+                        with traditional recipes and modern presentation.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3 hover:text-brand-gold text-2xl">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-white me-3 hover:text-brand-gold text-2xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white me-3 hover:text-brand-gold text-2xl">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/919876543210" class="text-white hover:text-brand-gold text-2xl">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2">
+                    <h4 class="font-semibold text-brand-gold mb-4">Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white/80 hover:text-brand-gold text-decoration-none">Home</a></li>
+                        <li><a href="menu.html" class="text-white/80 hover:text-brand-gold text-decoration-none">Menu</a></li>
+                        <li><a href="events.html" class="text-white/80 hover:text-brand-gold text-decoration-none">Events</a></li>
+                        <li><a href="gallery.html" class="text-white/80 hover:text-brand-gold text-decoration-none">Gallery</a></li>
+                        <li><a href="about.html" class="text-white/80 hover:text-brand-gold text-decoration-none">About</a></li>
+                        <li><a href="contact.html" class="text-white/80 hover:text-brand-gold text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h4 class="font-semibold text-brand-gold mb-4">Contact Info</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="fas fa-map-marker-alt text-brand-gold me-2"></i>
+                            123 Anna Nagar<br>
+                            <span class="ms-4">Madurai, Tamil Nadu 625020</span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone text-brand-gold me-2"></i>
+                            <a href="tel:+919876543210" class="text-white text-decoration-none">+91 98765 43210</a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-envelope text-brand-gold me-2"></i>
+                            <a href="mailto:info@maduraicatering.com" class="text-white text-decoration-none">info@maduraicatering.com</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h4 class="font-semibold text-brand-gold mb-4">Newsletter</h4>
+                    <p class="mb-4 opacity-90">Get updates on new dishes and special offers</p>
+                    <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your email" required>
+                            <button class="btn bg-brand-gold text-brand-charcoal font-semibold" type="submit">
+                                Subscribe
+                            </button>
+                        </div>
+                    </form>
+                    <p class="small opacity-75">
+                        Operating Hours:<br>
+                        Mon-Sun: 6:00 AM - 11:00 PM
+                    </p>
+                </div>
+            </div>
+            
+            <hr class="my-8 opacity-30">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 opacity-75">
+                        © 2024 Madurai Catering. All rights reserved. | GST: 33XXXXX1234X1ZX
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white/80 hover:text-brand-gold text-decoration-none me-4">Privacy Policy</a>
+                    <a href="#" class="text-white/80 hover:text-brand-gold text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/919876543210?text=Hello! I'm interested in your catering services." 
+           class="whatsapp-btn" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="notification-badge">1</span>
+        </a>
+    </div>
+
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title font-display text-2xl font-bold text-brand-maroon" id="bookingModalLabel">
+                        Book Your Event
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="bookingForm" onsubmit="submitBooking(event)">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="customerName" class="form-label font-semibold">Full Name *</label>
+                                <input type="text" class="form-control" id="customerName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="customerPhone" class="form-label font-semibold">Phone Number *</label>
+                                <input type="tel" class="form-control" id="customerPhone" 
+                                       pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="customerEmail" class="form-label font-semibold">Email *</label>
+                                <input type="email" class="form-control" id="customerEmail" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="eventType" class="form-label font-semibold">Event Type *</label>
+                                <select class="form-select" id="eventType" required>
+                                    <option value="">Select Event Type</option>
+                                    <option value="wedding">Wedding</option>
+                                    <option value="corporate">Corporate Event</option>
+                                    <option value="religious">Religious Function</option>
+                                    <option value="birthday">Birthday Party</option>
+                                    <option value="private">Private Party</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="eventDate" class="form-label font-semibold">Event Date *</label>
+                                <input type="date" class="form-control" id="eventDate" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="guestCount" class="form-label font-semibold">Number of Guests *</label>
+                                <input type="number" class="form-control" id="guestCount" min="10" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="eventLocation" class="form-label font-semibold">Event Location *</label>
+                                <textarea class="form-control" id="eventLocation" rows="2" 
+                                          placeholder="Full address with landmarks" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <label for="selectedDishes" class="form-label font-semibold">Preferred Dishes</label>
+                                <select class="form-select" id="selectedDishes" multiple size="4">
+                                    <option value="kari-dosa">Kari Dosa</option>
+                                    <option value="mutton-sukka">Mutton Sukka</option>
+                                    <option value="chicken-chettinad">Chicken Chettinad</option>
+                                    <option value="mutton-biryani">Mutton Biryani</option>
+                                    <option value="vanjaram-fish">Vanjaram Meen Varuval</option>
+                                    <option value="parotta-salna">Parotta with Salna</option>
+                                </select>
+                                <div class="form-text">Hold Ctrl/Cmd to select multiple dishes</div>
+                            </div>
+                            <div class="col-12">
+                                <label for="specialRequests" class="form-label font-semibold">Special Requests</label>
+                                <textarea class="form-control" id="specialRequests" rows="3" 
+                                          placeholder="Any special dietary requirements, serving preferences, or additional services needed"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex justify-content-end gap-3 mt-4">
+                            <button type="button" class="btn btn-outline-secondary px-4 py-2" data-bs-dismiss="modal">
+                                Cancel
+                            </button>
+                            <button type="submit" class="btn bg-brand-green text-white px-6 py-2 font-semibold">
+                                Submit Booking Request
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dish Detail Modal -->
+    <div class="modal fade" id="dishModal" tabindex="-1" aria-labelledby="dishModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title font-display text-2xl font-bold text-brand-maroon" id="dishModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="dishModalContent">
+                    <!-- Dynamic content will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Toast -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="successToast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    <i class="fas fa-check-circle me-2"></i>
+                    <span id="toastMessage">Booking request submitted successfully!</span>
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Production Analytics Placeholder -->
+    <!-- 
+    Google Analytics 4
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    
+    Facebook Pixel
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'YOUR_PIXEL_ID');
+        fbq('track', 'PageView');
+    </script>
+    -->
+
+</body>
+</html>

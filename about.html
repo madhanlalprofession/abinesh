@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Our Story & Team | Madurai Catering</title>
+    <meta name="description" content="Learn about Madurai Catering's journey, our passionate team, hygiene practices, and commitment to authentic flavors. Trusted catering service since establishment.">
+    <link rel="canonical" href="https://maduraicatering.com/about.html">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="About Madurai Catering - Our Story & Team">
+    <meta property="og:description" content="Discover our passion for authentic Madurai cuisine and commitment to exceptional catering service.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=630&fit=crop">
+    <meta property="og:url" content="https://maduraicatering.com/about.html">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-maroon': '#8B0000',
+                        'brand-gold': '#FFD166',
+                        'brand-ivory': '#FFF8F0',
+                        'brand-charcoal': '#1F2937',
+                        'brand-green': '#16A34A'
+                    },
+                    fontFamily: {
+                        'display': ['Playfair Display', 'serif'],
+                        'body': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "mainEntity": {
+            "@type": "Restaurant",
+            "name": "Madurai Catering",
+            "description": "Premium catering service specializing in authentic Madurai cuisine",
+            "foundingDate": "2018",
+            "founders": [
+                {
+                    "@type": "Person",
+                    "name": "Chef Murugan",
+                    "jobTitle": "Head Chef & Founder"
+                }
+            ]
+        }
+    }
+    </script>
+</head>
+<body class="font-body bg-brand-ivory text-brand-charcoal">
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand text-brand-maroon font-display font-bold text-2xl" href="index.html">
+                Madurai Catering
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvas">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title font-display text-brand-maroon">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-brand-green text-white px-4 py-2 rounded-full font-semibold" onclick="openBookingModal()">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-24 bg-gradient-to-r from-brand-maroon to-red-900 text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1 class="font-display text-5xl md:text-6xl font-bold mb-4">
+                        Our Story
+                    </h1>
+                    <p class="text-xl opacity-90 mb-8">
+                        Born from passion for authentic Madurai cuisine, grown with dedication to exceptional service. 
+                        Discover the people and principles behind every memorable meal we create.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="py-16 bg-white">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="story-content">
+                        <h2 class="font-display text-4xl font-bold text-brand-maroon mb-6">
+                            From Traditional Kitchen to Premium Catering
+                        </h2>
+                        <p class="text-lg text-gray-600 mb-4">
+                            Madurai Catering began in 2018 with a simple dream: to share the authentic flavors of 
+                            Madurai with families celebrating their most precious moments. What started as a small 
+                            kitchen operation has grown into the city's trusted catering partner.
+                        </p>
+                        <p class="text-lg text-gray-600 mb-4">
+                            Our founder, Chef Murugan, grew up in a traditional cooking family where recipes were 
+                            passed down through generations. Every spice blend, every cooking technique, and every 
+                            flavor combination in our kitchen tells a story of heritage and authenticity.
+                        </p>
+                        <p class="text-lg text-gray-600 mb-6">
+                            Today, after serving over 50,000 guests across 200+ events, we remain committed to our 
+                            founding principle: never compromise on taste, quality, or service excellence.
+                        </p>
+                        
+                        <div class="row g-4">
+                            <div class="col-6">
+                                <div class="stat-box text-center p-4 bg-brand-ivory rounded-xl">
+                                    <div class="stat-number text-3xl font-bold text-brand-maroon mb-2">2018</div>
+                                    <div class="stat-label text-gray-600">Established</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="stat-box text-center p-4 bg-brand-ivory rounded-xl">
+                                    <div class="stat-number text-3xl font-bold text-brand-maroon mb-2">200+</div>
+                                    <div class="stat-label text-gray-600">Events Served</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="story-image">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop" 
+                             alt="Traditional kitchen and cooking setup" 
+                             class="w-100 rounded-2xl shadow-lg" 
+                             loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-4xl font-bold text-brand-maroon mb-4">
+                    Our Core Values
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    These principles guide everything we do, from ingredient selection to final presentation
+                </p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="value-card bg-white rounded-2xl p-6 shadow-lg hover-lift h-100 text-center">
+                        <div class="value-icon text-brand-maroon mb-4">
+                            <i class="fas fa-heart text-5xl"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-brand-maroon mb-3">Authenticity</h3>
+                        <p class="text-gray-600">
+                            Every recipe is rooted in traditional Madurai cooking methods, using time-tested 
+                            techniques and authentic spice blends passed down through generations.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="value-card bg-white rounded-2xl p-6 shadow-lg hover-lift h-100 text-center">
+                        <div class="value-icon text-brand-maroon mb-4">
+                            <i class="fas fa-leaf text-5xl"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-brand-maroon mb-3">Fresh Quality</h3>
+                        <p class="text-gray-600">
+                            We source the freshest ingredients daily from trusted local suppliers, ensuring 
+                            every dish meets our high standards for taste and nutritional value.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="value-card bg-white rounded-2xl p-6 shadow-lg hover-lift h-100 text-center">
+                        <div class="value-icon text-brand-maroon mb-4">
+                            <i class="fas fa-users text-5xl"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-brand-maroon mb-3">Service Excellence</h3>
+                        <p class="text-gray-600">
+                            Our trained team delivers professional, courteous service that makes every event 
+                            seamless and memorable for hosts and guests alike.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="value-card bg-white rounded-2xl p-6 shadow-lg hover-lift h-100 text-center">
+                        <div class="value-icon text-brand-maroon mb-4">
+                            <i class="fas fa-shield-alt text-5xl"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-brand-maroon mb-3">Food Safety</h3>
+                        <p class="text-gray-600">
+                            Strict hygiene protocols, temperature control, and food safety measures ensure 
+                            every meal is not just delicious but completely safe for consumption.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="value-card bg-white rounded-2xl p-6 shadow-lg hover-lift h-100 text-center">
+                        <div class="value-icon text-brand-maroon mb-4">
+                            <i class="fas fa-handshake text-5xl"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-brand-maroon mb-3">Trust & Reliability</h3>
+                        <p class="text-gray-600">
+                            We honor our commitments with punctual delivery, consistent quality, and transparent 
+                            communication throughout your event planning process.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="value-card bg-white rounded-2xl p-6 shadow-lg hover-lift h-100 text-center">
+                        <div class="value-icon text-brand-maroon mb-4">
+                            <i class="fas fa-star text-5xl"></i>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-brand-maroon mb-3">Continuous Innovation</h3>
+                        <p class="text-gray-600">
+                            While respecting tradition, we continuously refine our presentation, service methods, 
+                            and menu options to exceed modern expectations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Our Team Section -->
+    <section class="py-16 bg-white">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-4xl font-bold text-brand-maroon mb-4">
+                    Meet Our Team
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    The passionate professionals who bring authentic Madurai flavors to your celebrations
+                </p>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-card bg-brand-ivory rounded-2xl overflow-hidden shadow-lg hover-lift">
+                        <div class="team-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" 
+                                 alt="Chef Murugan - Head Chef and Founder" 
+                                 class="w-100 h-80 object-cover" 
+                                 loading="lazy">
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="font-display text-2xl font-bold text-brand-maroon mb-2">Chef Murugan</h3>
+                            <p class="text-brand-gold font-semibold mb-3">Head Chef & Founder</p>
+                            <p class="text-gray-600 mb-4">
+                                With 15+ years of culinary expertise, Chef Murugan brings authentic Madurai 
+                                flavors to every dish. His passion for traditional cooking methods ensures 
+                                every meal tells a story of heritage.
+                            </p>
+                            <div class="specialties">
+                                <span class="badge bg-brand-maroon text-white me-2 mb-2">Chettinad Cuisine</span>
+                                <span class="badge bg-brand-maroon text-white me-2 mb-2">Traditional Spices</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-card bg-brand-ivory rounded-2xl overflow-hidden shadow-lg hover-lift">
+                        <div class="team-image">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616c78746a5?w=400&h=400&fit=crop&crop=face" 
+                                 alt="Priya Devi - Operations Manager" 
+                                 class="w-100 h-80 object-cover" 
+                                 loading="lazy">
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="font-display text-2xl font-bold text-brand-maroon mb-2">Priya Devi</h3>
+                            <p class="text-brand-gold font-semibold mb-3">Operations Manager</p>
+                            <p class="text-gray-600 mb-4">
+                                Priya ensures every event runs smoothly from planning to execution. Her attention 
+                                to detail and client-focused approach has earned us countless satisfied customers.
+                            </p>
+                            <div class="specialties">
+                                <span class="badge bg-brand-maroon text-white me-2 mb-2">Event Planning</span>
+                                <span class="badge bg-brand-maroon text-white me-2 mb-2">Client Relations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-card bg-brand-ivory rounded-2xl overflow-hidden shadow-lg hover-lift">
+                        <div class="team-image">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face" 
+                                 alt="Ravi Kumar - Service Manager" 
+                                 class="w-100 h-80 object-cover" 
+                                 loading="lazy">
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="font-display text-2xl font-bold text-brand-maroon mb-2">Ravi Kumar</h3>
+                            <p class="text-brand-gold font-semibold mb-3">Service Manager</p>
+                            <p class="text-gray-600 mb-4">
+                                Ravi leads our service team with professionalism and warmth. His experience in 
+                                hospitality ensures every guest feels welcomed and well-cared for at your event.
+                            </p>
+                            <div class="specialties">
+                                <span class="badge bg-brand-maroon text-white me-2 mb-2">Team Leadership</span>
+                                <span class="badge bg-brand-maroon text-white me-2 mb-2">Guest Service</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hygiene & Safety Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="hygiene-image">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop" 
+                             alt="Clean professional kitchen with hygiene standards" 
+                             class="w-100 rounded-2xl shadow-lg" 
+                             loading="lazy">
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="hygiene-content">
+                        <h2 class="font-display text-4xl font-bold text-brand-maroon mb-6">
+                            Hygiene & Food Safety Standards
+                        </h2>
+                        <p class="text-lg text-gray-600 mb-6">
+                            Your health and safety are our top priorities. We maintain the highest standards 
+                            of cleanliness and food safety in every aspect of our operation.
+                        </p>
+                        
+                        <div class="hygiene-features">
+                            <div class="feature-item d-flex align-items-start mb-4">
+                                <div class="feature-icon text-brand-green me-3 mt-1">
+                                    <i class="fas fa-check-circle text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-brand-maroon mb-2">FSSAI Certified Kitchen</h4>
+                                    <p class="text-gray-600">Our kitchen facilities are fully certified and regularly inspected by food safety authorities.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item d-flex align-items-start mb-4">
+                                <div class="feature-icon text-brand-green me-3 mt-1">
+                                    <i class="fas fa-check-circle text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-brand-maroon mb-2">Temperature Control</h4>
+                                    <p class="text-gray-600">Strict temperature monitoring during cooking, transport, and service to ensure food safety.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item d-flex align-items-start mb-4">
+                                <div class="feature-icon text-brand-green me-3 mt-1">
+                                    <i class="fas fa-check-circle text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-brand-maroon mb-2">Trained Staff</h4>
+                                    <p class="text-gray-600">All team members receive regular training on hygiene protocols and food handling procedures.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item d-flex align-items-start mb-4">
+                                <div class="feature-icon text-brand-green me-3 mt-1">
+                                    <i class="fas fa-check-circle text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-brand-maroon mb-2">Quality Ingredients</h4>
+                                    <p class="text-gray-600">Fresh ingredients sourced daily from verified suppliers with proper storage and handling.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item d-flex align-items-start">
+                                <div class="feature-icon text-brand-green me-3 mt-1">
+                                    <i class="fas fa-check-circle text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-brand-maroon mb-2">Sanitized Equipment</h4>
+                                    <p class="text-gray-600">All cooking and serving equipment is thoroughly sanitized before and after each event.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards & Recognition Section -->
+    <section class="py-16 bg-white">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-4xl font-bold text-brand-maroon mb-4">
+                    Awards & Recognition
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Our commitment to excellence has been recognized by clients and industry peers
+                </p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="award-card bg-brand-ivory rounded-2xl p-6 text-center shadow-lg hover-lift">
+                        <div class="award-icon text-brand-gold mb-4">
+                            <i class="fas fa-trophy text-5xl"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-brand-maroon mb-2">Best Catering Service</h3>
+                        <p class="text-gray-600 mb-2">Madurai Food Awards 2023</p>
+                        <p class="small text-gray-500">Recognized for authentic cuisine and service excellence</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="award-card bg-brand-ivory rounded-2xl p-6 text-center shadow-lg hover-lift">
+                        <div class="award-icon text-brand-gold mb-4">
+                            <i class="fas fa-star text-5xl"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-brand-maroon mb-2">5-Star Rating</h3>
+                        <p class="text-gray-600 mb-2">Google Reviews</p>
+                        <p class="small text-gray-500">Based on 150+ customer reviews</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="award-card bg-brand-ivory rounded-2xl p-6 text-center shadow-lg hover-lift">
+                        <div class="award-icon text-brand-gold mb-4">
+                            <i class="fas fa-certificate text-5xl"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-brand-maroon mb-2">FSSAI Certified</h3>
+                        <p class="text-gray-600 mb-2">Food Safety License</p>
+                        <p class="small text-gray-500">Highest standards of food safety and hygiene</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="award-card bg-brand-ivory rounded-2xl p-6 text-center shadow-lg hover-lift">
+                        <div class="award-icon text-brand-gold mb-4">
+                            <i class="fas fa-heart text-5xl"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-brand-maroon mb-2">Customer Choice</h3>
+                        <p class="text-gray-600 mb-2">Wedding Catering 2023</p>
+                        <p class="small text-gray-500">Most recommended by satisfied couples</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Process Section -->
+    <section class="py-16 bg-gradient-to-b from-brand-ivory to-white">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-4xl font-bold text-brand-maroon mb-4">
+                    Our Catering Process
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    From initial consultation to final cleanup, here's how we ensure your event is perfect
+                </p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-step text-center">
+                        <div class="step-number bg-brand-maroon text-white rounded-full w-16 h-16 d-flex align-items-center justify-content-center mx-auto mb-4 font-bold text-xl">
+                            1
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-brand-maroon mb-3">Consultation</h3>
+                        <p class="text-gray-600">
+                            We discuss your event details, preferences, dietary requirements, and budget to create a customized plan.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-step text-center">
+                        <div class="step-number bg-brand-maroon text-white rounded-full w-16 h-16 d-flex align-items-center justify-content-center mx-auto mb-4 font-bold text-xl">
+                            2
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-brand-maroon mb-3">Menu Planning</h3>
+                        <p class="text-gray-600">
+                            Our chefs design a menu that perfectly matches your event theme, guest preferences, and cultural requirements.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-step text-center">
+                        <div class="step-number bg-brand-maroon text-white rounded-full w-16 h-16 d-flex align-items-center justify-content-center mx-auto mb-4 font-bold text-xl">
+                            3
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-brand-maroon mb-3">Preparation</h3>
+                        <p class="text-gray-600">
+                            Fresh ingredients are sourced, dishes are prepared with care, and everything is organized for seamless service.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-step text-center">
+                        <div class="step-number bg-brand-maroon text-white rounded-full w-16 h-16 d-flex align-items-center justify-content-center mx-auto mb-4 font-bold text-xl">
+                            4
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-brand-maroon mb-3">Service & Cleanup</h3>
+                        <p class="text-gray-600">
+                            Professional service during your event, followed by complete cleanup so you can focus on enjoying the celebration.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-brand-gold to-yellow-400 text-brand-charcoal">
+        <div class="container text-center">
+            <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">
+                Ready to Experience the Difference?
+            </h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">
+                Join hundreds of satisfied clients who have trusted us with their special occasions. 
+                Let our passionate team create an unforgettable culinary experience for your next event.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="btn btn-lg bg-brand-maroon text-white px-8 py-3 rounded-full font-semibold hover-scale" onclick="openBookingModal()">
+                    Book Your Event
+                </button>
+                <a href="contact.html" class="btn btn-lg btn-outline-brand-charcoal px-8 py-3 rounded-full font-semibold hover-scale">
+                    Meet Our Team
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-charcoal text-white py-16">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="font-display text-2xl font-bold text-brand-gold mb-4">Madurai Catering</h3>
+                    <p class="mb-4 opacity-90">
+                        Authentic Madurai flavors for your special occasions. Premium catering services 
+                        with traditional recipes and modern presentation.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3 hover:text-brand-gold text-2xl">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-white me-3 hover:text-brand-gold text-2xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white me-3 hover:text-brand-gold text-2xl">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/919876543210" class="text-white hover:text-brand-gold text-2xl">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2">
+                    <h4 class="font-semibold text-brand-gold mb-4">Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white/80 hover:text-brand-gold text-decoration-none">Home</a></li>
+                        <li><a href="menu.html" class="text-white/80 hover:text-brand-gold text-decoration-none">Menu</a></li>
+                        <li><a href="events.html" class="text-white/80 hover:text-brand-gold text-decoration-none">Events</a></li>
+                        <li><a href="gallery.html" class="text-white/80 hover:text-brand-gold text-decoration-none">Gallery</a></li>
+                        <li><a href="contact.html" class="text-white/80 hover:text-brand-gold text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h4 class="font-semibold text-brand-gold mb-4">Contact Info</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="fas fa-map-marker-alt text-brand-gold me-2"></i>
+                            123 Anna Nagar<br>
+                            <span class="ms-4">Madurai, Tamil Nadu 625020</span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone text-brand-gold me-2"></i>
+                            <a href="tel:+919876543210" class="text-white text-decoration-none">+91 98765 43210</a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-envelope text-brand-gold me-2"></i>
+                            <a href="mailto:info@maduraicatering.com" class="text-white text-decoration-none">info@maduraicatering.com</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h4 class="font-semibold text-brand-gold mb-4">Our Values</h4>
+                    <ul class="list-unstyled">
+                        <li class="text-white/80">✓ Authentic Flavors</li>
+                        <li class="text-white/80">✓ Fresh Quality</li>
+                        <li class="text-white/80">✓ Professional Service</li>
+                        <li class="text-white/80">✓ Food Safety</li>
+                        <li class="text-white/80">✓ Customer Satisfaction</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-8 opacity-30">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 opacity-75">
+                        © 2024 Madurai Catering. All rights reserved. | GST: 33XXXXX1234X1ZX
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white/80 hover:text-brand-gold text-decoration-none me-4">Privacy Policy</a>
+                    <a href="#" class="text-white/80 hover:text-brand-gold text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/919876543210?text=Hello! I'd like to know more about your catering services and team." 
+           class="whatsapp-btn" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="notification-badge">1</span>
+        </a>
+    </div>
+
+    <!-- Include modals from other pages -->
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title font-display text-2xl font-bold text-brand-maroon" id="bookingModalLabel">
+                        Book Your Event
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="bookingForm" onsubmit="submitBooking(event)">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="customerName" class="form-label font-semibold">Full Name *</label>
+                                <input type="text" class="form-control" id="customerName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="customerPhone" class="form-label font-semibold">Phone Number *</label>
+                                <input type="tel" class="form-control" id="customerPhone" 
+                                       pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="customerEmail" class="form-label font-semibold">Email *</label>
+                                <input type="email" class="form-control" id="customerEmail" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="eventType" class="form-label font-semibold">Event Type *</label>
+                                <select class="form-select" id="eventType" required>
+                                    <option value="">Select Event Type</option>
+                                    <option value="wedding">Wedding</option>
+                                    <option value="corporate">Corporate Event</option>
+                                    <option value="religious">Religious Function</option>
+                                    <option value="birthday">Birthday Party</option>
+                                    <option value="private">Private Party</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="eventDate" class="form-label font-semibold">Event Date *</label>
+                                <input type="date" class="form-control" id="eventDate" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="guestCount" class="form-label font-semibold">Number of Guests *</label>
+                                <input type="number" class="form-control" id="guestCount" min="10" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="eventLocation" class="form-label font-semibold">Event Location *</label>
+                                <textarea class="form-control" id="eventLocation" rows="2" 
+                                          placeholder="Full address with landmarks" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <label for="specialRequests" class="form-label font-semibold">Special Requests</label>
+                                <textarea class="form-control" id="specialRequests" rows="3" 
+                                          placeholder="Any special requirements or preferences"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex justify-content-end gap-3 mt-4">
+                            <button type="button" class="btn btn-outline-secondary px-4 py-2" data-bs-dismiss="modal">
+                                Cancel
+                            </button>
+                            <button type="submit" class="btn bg-brand-green text-white px-6 py-2 font-semibold">
+                                Submit Booking Request
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Toast -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="successToast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    <i class="fas fa-check-circle me-2"></i>
+                    <span id="toastMessage">Success message here</span>
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Event Memories | Madurai Catering</title>
+    <meta name="description" content="Browse our gallery showcasing beautiful events, delicious food presentations, and happy clients. See why Madurai Catering is the preferred choice for special occasions.">
+    <link rel="canonical" href="https://maduraicatering.com/gallery.html">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Photo Gallery - Madurai Catering">
+    <meta property="og:description" content="Beautiful event photos and food presentations from Madurai Catering.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=1200&h=630&fit=crop">
+    <meta property="og:url" content="https://maduraicatering.com/gallery.html">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-maroon': '#8B0000',
+                        'brand-gold': '#FFD166',
+                        'brand-ivory': '#FFF8F0',
+                        'brand-charcoal': '#1F2937',
+                        'brand-green': '#16A34A'
+                    },
+                    fontFamily: {
+                        'display': ['Playfair Display', 'serif'],
+                        'body': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="font-body bg-brand-ivory text-brand-charcoal">
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand text-brand-maroon font-display font-bold text-2xl" href="index.html">
+                Madurai Catering
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvas">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title font-display text-brand-maroon">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-brand-green text-white px-4 py-2 rounded-full font-semibold" onclick="openBookingModal()">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-24 bg-gradient-to-r from-brand-maroon to-red-900 text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1 class="font-display text-5xl md:text-6xl font-bold mb-4">
+                        Event Gallery
+                    </h1>
+                    <p class="text-xl opacity-90 mb-8">
+                        Capturing the joy, flavors, and memories from our catered events. 
+                        See how we bring authentic Madurai cuisine to life at celebrations across the city.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <button class="btn btn-lg bg-brand-gold text-brand-charcoal px-6 py-3 rounded-full font-semibold" onclick="filterGallery('all')">
+                            All Events
+                        </button>
+                        <button class="btn btn-lg btn-outline-light px-6 py-3 rounded-full font-semibold" onclick="filterGallery('weddings')">
+                            Weddings
+                        </button>
+                        <button class="btn btn-lg btn-outline-light px-6 py-3 rounded-full font-semibold" onclick="filterGallery('food')">
+                            Food Shots
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Stats -->
+    <section class="py-16 bg-white">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-card">
+                        <div class="stat-number text-4xl font-bold text-brand-maroon mb-2">200+</div>
+                        <div class="stat-label text-gray-600">Events Catered</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-card">
+                        <div class="stat-number text-4xl font-bold text-brand-maroon mb-2">50,000+</div>
+                        <div class="stat-label text-gray-600">Guests Served</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-card">
+                        <div class="stat-number text-4xl font-bold text-brand-maroon mb-2">95%</div>
+                        <div class="stat-label text-gray-600">Customer Satisfaction</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-card">
+                        <div class="stat-number text-4xl font-bold text-brand-maroon mb-2">5★</div>
+                        <div class="stat-label text-gray-600">Average Rating</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Gallery -->
+    <section class="py-16 bg-gray-50">
+        <div class="container">
+            <!-- Gallery Filter Tabs -->
+            <div class="text-center mb-8">
+                <div class="btn-group gallery-filters" role="group">
+                    <button type="button" class="btn btn-outline-brand-maroon active" data-filter="all">All</button>
+                    <button type="button" class="btn btn-outline-brand-maroon" data-filter="weddings">Weddings</button>
+                    <button type="button" class="btn btn-outline-brand-maroon" data-filter="corporate">Corporate</button>
+                    <button type="button" class="btn btn-outline-brand-maroon" data-filter="food">Food</button>
+                    <button type="button" class="btn btn-outline-brand-maroon" data-filter="setup">Event Setup</button>
+                </div>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+                
+                <!-- Wedding Images -->
+                <div class="gallery-item" data-category="weddings" data-caption="Grand wedding feast with traditional setup">
+                    <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&h=1200&fit=crop" 
+                         alt="Grand wedding catering setup with traditional decorations" 
+                         class="w-100 rounded-2xl" 
+                         loading="lazy">
+                </div>
+
+                <div class="gallery-item" data-category="food" data-caption="Authentic Kari Dosa - our signature dish">
+                    <img src="https://images.unsplash.com/photo-1630383249896-424e482df921?w=800&h=600&fit=crop" 
+                         alt="Fresh Kari Dosa with mutton curry filling" 
+                         class="w-100 rounded-2xl" 
+                         loading="lazy">
+                </div>
+
+                <div class="gallery-item" data-category="weddings" data-caption="Beautiful mandap decoration with catering setup">
+                    <img src="https://images.unsplash.com/photo-1623843772316-68a12c2a8e33?w=600&h=900&fit=crop" 
+                         alt="Wedding mandap with elegant catering arrangement" 
+                         class="w-100 rounded-2xl" 
+                         loading="lazy">
+                </div>
+
+                <div class="gallery-item" data-category="food" data-caption="Aromatic Mutton Biryani with seeraga samba rice">
+                    <img src="https://images.unsplash.com/photo-1563379091339-03246963d84a?w=800&h=600&fit=crop" 
+                         alt="Traditional Mutton Biryani with garnish and accompaniments" 
+                         class="w-100 rounded-2xl" 
+                         loading="lazy">
+                </div>
+
+                <div class="gallery-item" data-category="setup" data-caption="Professional buffet setup for corporate event">
+                    <img src="https://images.unsplash.com/photo-1555244162-803834f70033?w=800&h=600&fit=crop" 
+                         alt="Professional buffet catering setup for corporate function" 
+                         class="w-100 rounded-2xl" 
+                         loading="lazy">
+                </div>
+
+                <div class="gallery-item" data-category="food" data-caption="Fresh Vanjaram Meen Varuval - coastal delight">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&h=600&fit=crop" 
+                         alt="Crispy Vanjaram fish fry with traditional spices" 
+                         class="w-100 rounded-2xl" 
+                         loading="lazy">
+                </div>
+
+                <div class="gallery-item" data-category="corporate" data-caption="Corporate lunch setup with professional presentation">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=1000&fit=crop" 
+                         alt="Corporate event catering with professional setup" 
+                         class="w-100 rounded-2xl" 
+                         loading="lazy">
+                </div>
+
+                <div class="gallery-item" data-category="food" data-caption="Traditional Chicken Chettinad with authentic flavors">
+                    <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=800&h=600&fit=crop" 
+                         alt="Authentic Chicken Chettinad with traditional spice blend" 
+                         class="w-100 rounded-2xl" 
+                         loading="lazy">
+                </div>
+
+                <div class="gallery-item" data-category="weddings" data-caption="Happy couple with our catering team">
+                    <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=600&h=800&fit=crop" 
+                         alt="Satisfied wedding couple with catering service team" 
+                         class="w-100 rounded-2xl" 
+                         loading="lazy">
+                </div>
+
+                <div class="gallery-item" data-category="setup" data-caption="Live Kari Dosa counter in action">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop" 
+                         alt="Live cooking counter with chef preparing fresh dishes" 
+                         class="w-100 rounded-2xl" 
+                         loading="lazy">
+                </div>
+
+                <div class="gallery-item" data-category="food" data-caption="Flaky Parotta with rich Salna curry">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=800&h=600&fit=crop" 
+                         alt="Fresh Parotta with authentic Salna gravy" 
+                         class="w-100 rounded-2xl" 
+                         loading="lazy">
+                </div>
+
+                <div class="gallery-item" data-category="corporate" data-caption="Business conference catering service">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=600&fit=crop" 
+                         alt="Professional corporate conference catering setup" 
+                         class="w-100 rounded-2xl" 
+                         loading="lazy">
+                </div>
+
+                <div class="gallery-item" data-category="weddings" data-caption="Traditional banana leaf service">
+                    <img src="https://images.unsplash.com/photo-1604085572504-a392ddf0d86a?w=800&h=600&fit=crop" 
+                         alt="Traditional South Indian meal served on banana leaf" 
+                         class="w-100 rounded-2xl" 
+                         loading="lazy">
+                </div>
+
+                <div class="gallery-item" data-category="food" data-caption="Spicy Prawn Masala with coastal flavors">
+                    <img src="https://images.unsplash.com/photo-1565564558300-3090ba4cfd4c?w=800&h=600&fit=crop" 
+                         alt="Fresh Prawn Masala with traditional curry preparation" 
+                         class="w-100 rounded-2xl" 
+                         loading="lazy">
+                </div>
+
+                <div class="gallery-item" data-category="setup" data-caption="Elegant table setup for private function">
+                    <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&h=600&fit=crop" 
+                         alt="Elegant table setting for private party catering" 
+                         class="w-100 rounded-2xl" 
+                         loading="lazy">
+                </div>
+
+                <div class="gallery-item" data-category="food" data-caption="Traditional desserts and sweets selection">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop" 
+                         alt="Traditional South Indian sweets and desserts display" 
+                         class="w-100 rounded-2xl" 
+                         loading="lazy">
+                </div>
+
+                <div class="gallery-item" data-category="weddings" data-caption="Grand wedding reception dinner setup">
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&h=1000&fit=crop" 
+                         alt="Elegant wedding reception dinner setup with lighting" 
+                         class="w-100 rounded-2xl" 
+                         loading="lazy">
+                </div>
+
+                <div class="gallery-item" data-category="corporate" data-caption="Office party catering with modern setup">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop" 
+                         alt="Modern office party catering arrangement" 
+                         class="w-100 rounded-2xl" 
+                         loading="lazy">
+                </div>
+
+                <div class="gallery-item" data-category="food" data-caption="Mutton Sukka - dry roasted perfection">
+                    <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=800&h=600&fit=crop" 
+                         alt="Dry roasted Mutton Sukka with coconut and spices" 
+                         class="w-100 rounded-2xl" 
+                         loading="lazy">
+                </div>
+
+                <div class="gallery-item" data-category="setup" data-caption="Outdoor wedding catering arrangement">
+                    <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&h=600&fit=crop" 
+                         alt="Beautiful outdoor wedding catering setup" 
+                         class="w-100 rounded-2xl" 
+                         loading="lazy">
+                </div>
+
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-8">
+                <button class="btn btn-outline-brand-maroon px-8 py-3 rounded-full font-semibold" onclick="loadMoreImages()">
+                    <i class="fas fa-plus me-2"></i>
+                    Load More Images
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="py-16 bg-white">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-4xl font-bold text-brand-maroon mb-4">
+                    Event Videos
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Experience the energy and joy of our catered events through these memorable moments
+                </p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="video-card rounded-2xl overflow-hidden shadow-lg hover-lift">
+                        <div class="video-container position-relative">
+                            <video class="w-100" controls poster="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&h=450&fit=crop">
+                                <source src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="video-overlay position-absolute top-50 start-50 translate-middle">
+                                <i class="fas fa-play-circle text-white" style="font-size: 4rem; opacity: 0.8;"></i>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-display text-xl font-bold text-brand-maroon mb-2">
+                                Grand Wedding Reception
+                            </h3>
+                            <p class="text-gray-600">
+                                Behind-the-scenes look at our team preparing and serving a 500-guest wedding reception 
+                                with live cooking counters and traditional presentation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="video-card rounded-2xl overflow-hidden shadow-lg hover-lift">
+                        <div class="video-container position-relative">
+                            <video class="w-100" controls poster="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=450&fit=crop">
+                                <source src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="video-overlay position-absolute top-50 start-50 translate-middle">
+                                <i class="fas fa-play-circle text-white" style="font-size: 4rem; opacity: 0.8;"></i>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-display text-xl font-bold text-brand-maroon mb-2">
+                                Live Kari Dosa Counter
+                            </h3>
+                            <p class="text-gray-600">
+                                Watch our skilled chefs prepare fresh Kari Dosa at a live counter, 
+                                delighting guests with the authentic preparation process.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials with Photos -->
+    <section class="py-16 bg-brand-maroon text-white">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-4xl font-bold mb-4">
+                    Happy Clients
+                </h2>
+                <p class="text-xl opacity-90 max-w-3xl mx-auto">
+                    See the joy on our clients' faces and read their heartfelt testimonials
+                </p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="testimonial-card bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center h-100">
+                        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=150&h=150&fit=crop&crop=face" 
+                             alt="Satisfied customer - Priya and Rajesh" 
+                             class="rounded-full mx-auto mb-4" 
+                             width="80" height="80" 
+                             loading="lazy">
+                        <div class="stars mb-3">
+                            <i class="fas fa-star text-brand-gold"></i>
+                            <i class="fas fa-star text-brand-gold"></i>
+                            <i class="fas fa-star text-brand-gold"></i>
+                            <i class="fas fa-star text-brand-gold"></i>
+                            <i class="fas fa-star text-brand-gold"></i>
+                        </div>
+                        <blockquote class="mb-4">
+                            "The Kari Dosa at our wedding was absolutely incredible! Our guests are still talking about it."
+                        </blockquote>
+                        <cite class="font-semibold">Priya & Rajesh</cite>
+                        <p class="small opacity-75">Wedding Reception • 500 guests</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="testimonial-card bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center h-100">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" 
+                             alt="Satisfied customer - Suresh Kumar" 
+                             class="rounded-full mx-auto mb-4" 
+                             width="80" height="80" 
+                             loading="lazy">
+                        <div class="stars mb-3">
+                            <i class="fas fa-star text-brand-gold"></i>
+                            <i class="fas fa-star text-brand-gold"></i>
+                            <i class="fas fa-star text-brand-gold"></i>
+                            <i class="fas fa-star text-brand-gold"></i>
+                            <i class="fas fa-star text-brand-gold"></i>
+                        </div>
+                        <blockquote class="mb-4">
+                            "Professional service and exceptional food quality. Our corporate event was a huge success."
+                        </blockquote>
+                        <cite class="font-semibold">Suresh Kumar</cite>
+                        <p class="small opacity-75">Corporate Event • 200 guests</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="testimonial-card bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center h-100">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616c78746a5?w=150&h=150&fit=crop&crop=face" 
+                             alt="Satisfied customer - Meera Devi" 
+                             class="rounded-full mx-auto mb-4" 
+                             width="80" height="80" 
+                             loading="lazy">
+                        <div class="stars mb-3">
+                            <i class="fas fa-star text-brand-gold"></i>
+                            <i class="fas fa-star text-brand-gold"></i>
+                            <i class="fas fa-star text-brand-gold"></i>
+                            <i class="fas fa-star text-brand-gold"></i>
+                            <i class="fas fa-star text-brand-gold"></i>
+                        </div>
+                        <blockquote class="mb-4">
+                            "Authentic Madurai taste at its best! Perfect for our family reunion celebration."
+                        </blockquote>
+                        <cite class="font-semibold">Meera Devi</cite>
+                        <p class="small opacity-75">Family Function • 80 guests</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-brand-gold to-yellow-400 text-brand-charcoal">
+        <div class="container text-center">
+            <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">
+                Ready to Create Your Own Gallery?
+            </h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">
+                Let us capture beautiful memories at your next event with our exceptional catering service. 
+                Every celebration deserves to be picture-perfect!
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="btn btn-lg bg-brand-maroon text-white px-8 py-3 rounded-full font-semibold hover-scale" onclick="openBookingModal()">
+                    Book Your Event
+                </button>
+                <a href="contact.html" class="btn btn-lg btn-outline-brand-charcoal px-8 py-3 rounded-full font-semibold hover-scale">
+                    Schedule Tasting
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-charcoal text-white py-16">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="font-display text-2xl font-bold text-brand-gold mb-4">Madurai Catering</h3>
+                    <p class="mb-4 opacity-90">
+                        Authentic Madurai flavors for your special occasions. Premium catering services 
+                        with traditional recipes and modern presentation.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3 hover:text-brand-gold text-2xl">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-white me-3 hover:text-brand-gold text-2xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white me-3 hover:text-brand-gold text-2xl">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/919876543210" class="text-white hover:text-brand-gold text-2xl">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2">
+                    <h4 class="font-semibold text-brand-gold mb-4">Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white/80 hover:text-brand-gold text-decoration-none">Home</a></li>
+                        <li><a href="menu.html" class="text-white/80 hover:text-brand-gold text-decoration-none">Menu</a></li>
+                        <li><a href="events.html" class="text-white/80 hover:text-brand-gold text-decoration-none">Events</a></li>
+                        <li><a href="about.html" class="text-white/80 hover:text-brand-gold text-decoration-none">About</a></li>
+                        <li><a href="contact.html" class="text-white/80 hover:text-brand-gold text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h4 class="font-semibold text-brand-gold mb-4">Contact Info</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="fas fa-map-marker-alt text-brand-gold me-2"></i>
+                            123 Anna Nagar<br>
+                            <span class="ms-4">Madurai, Tamil Nadu 625020</span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone text-brand-gold me-2"></i>
+                            <a href="tel:+919876543210" class="text-white text-decoration-none">+91 98765 43210</a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-envelope text-brand-gold me-2"></i>
+                            <a href="mailto:info@maduraicatering.com" class="text-white text-decoration-none">info@maduraicatering.com</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h4 class="font-semibold text-brand-gold mb-4">Gallery Categories</h4>
+                    <ul class="list-unstyled">
+                        <li><button onclick="filterGallery('weddings')" class="text-white/80 hover:text-brand-gold bg-transparent border-0 p-0 text-decoration-none">Wedding Gallery</button></li>
+                        <li><button onclick="filterGallery('food')" class="text-white/80 hover:text-brand-gold bg-transparent border-0 p-0 text-decoration-none">Food Photography</button></li>
+                        <li><button onclick="filterGallery('corporate')" class="text-white/80 hover:text-brand-gold bg-transparent border-0 p-0 text-decoration-none">Corporate Events</button></li>
+                        <li><button onclick="filterGallery('setup')" class="text-white/80 hover:text-brand-gold bg-transparent border-0 p-0 text-decoration-none">Event Setups</button></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-8 opacity-30">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 opacity-75">
+                        © 2024 Madurai Catering. All rights reserved. | GST: 33XXXXX1234X1ZX
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white/80 hover:text-brand-gold text-decoration-none me-4">Privacy Policy</a>
+                    <a href="#" class="text-white/80 hover:text-brand-gold text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/919876543210?text=Hello! I saw your gallery and I'm interested in your catering services." 
+           class="whatsapp-btn" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="notification-badge">1</span>
+        </a>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <button class="lightbox-nav lightbox-prev" onclick="changeLightboxMedia(-1)">&#10094;</button>
+            <button class="lightbox-nav lightbox-next" onclick="changeLightboxMedia(1)">&#10095;</button>
+            <img id="lightbox-img" style="display: none;" alt="Gallery image">
+            <video id="lightbox-video" style="display: none;" controls>
+                Your browser does not support the video tag.
+            </video>
+            <div class="lightbox-caption mt-4 text-center text-white"></div>
+        </div>
+    </div>
+
+    <!-- Include modals from other pages -->
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title font-display text-2xl font-bold text-brand-maroon" id="bookingModalLabel">
+                        Book Your Event
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="bookingForm" onsubmit="submitBooking(event)">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="customerName" class="form-label font-semibold">Full Name *</label>
+                                <input type="text" class="form-control" id="customerName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="customerPhone" class="form-label font-semibold">Phone Number *</label>
+                                <input type="tel" class="form-control" id="customerPhone" 
+                                       pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="customerEmail" class="form-label font-semibold">Email *</label>
+                                <input type="email" class="form-control" id="customerEmail" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="eventType" class="form-label font-semibold">Event Type *</label>
+                                <select class="form-select" id="eventType" required>
+                                    <option value="">Select Event Type</option>
+                                    <option value="wedding">Wedding</option>
+                                    <option value="corporate">Corporate Event</option>
+                                    <option value="religious">Religious Function</option>
+                                    <option value="birthday">Birthday Party</option>
+                                    <option value="private">Private Party</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="eventDate" class="form-label font-semibold">Event Date *</label>
+                                <input type="date" class="form-control" id="eventDate" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="guestCount" class="form-label font-semibold">Number of Guests *</label>
+                                <input type="number" class="form-control" id="guestCount" min="10" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="eventLocation" class="form-label font-semibold">Event Location *</label>
+                                <textarea class="form-control" id="eventLocation" rows="2" 
+                                          placeholder="Full address with landmarks" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <label for="specialRequests" class="form-label font-semibold">Special Requests</label>
+                                <textarea class="form-control" id="specialRequests" rows="3" 
+                                          placeholder="Any special requirements or preferences"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex justify-content-end gap-3 mt-4">
+                            <button type="button" class="btn btn-outline-secondary px-4 py-2" data-bs-dismiss="modal">
+                                Cancel
+                            </button>
+                            <button type="submit" class="btn bg-brand-green text-white px-6 py-2 font-semibold">
+                                Submit Booking Request
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Toast -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="successToast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    <i class="fas fa-check-circle me-2"></i>
+                    <span id="toastMessage">Success message here</span>
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Gallery-specific JavaScript -->
+    <script>
+        // Gallery filtering functionality
+        function filterGallery(category) {
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            const filterButtons = document.querySelectorAll('.gallery-filters button');
+            
+            // Update active button
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Filter gallery items
+            galleryItems.forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Gallery filter button click handlers
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.gallery-filters button');
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filter = this.dataset.filter;
+                    filterGallery(filter);
+                });
+            });
+        });
+
+        // Load more images functionality
+        function loadMoreImages() {
+            // In a real application, this would load more images from the server
+            showSuccessToast('All images loaded! Check out our social media for more recent photos.');
+        }
+
+        // Enhanced lightbox for gallery
+        document.addEventListener('click', function(e) {
+            const galleryItem = e.target.closest('.gallery-item');
+            if (galleryItem && galleryItem.style.display !== 'none') {
+                const img = galleryItem.querySelector('img');
+                const caption = galleryItem.dataset.caption || '';
+                
+                if (img) {
+                    const lightbox = document.getElementById('lightbox');
+                    const lightboxImg = document.getElementById('lightbox-img');
+                    const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+                    
+                    lightboxImg.src = img.src;
+                    lightboxImg.alt = img.alt;
+                    lightboxImg.style.display = 'block';
+                    lightboxCaption.textContent = caption;
+                    
+                    lightbox.style.display = 'block';
+                    document.body.style.overflow = 'hidden';
+                    
+                    // Store visible gallery items for navigation
+                    const visibleItems = Array.from(document.querySelectorAll('.gallery-item'))
+                                             .filter(item => item.style.display !== 'none');
+                    window.currentGalleryItems = visibleItems;
+                    window.currentLightboxIndex = visibleItems.indexOf(galleryItem);
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>

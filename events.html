@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Catering Packages | Madurai Catering - Weddings, Corporate & Private Events</title>
+    <meta name="description" content="Discover our comprehensive catering packages for weddings, corporate events, religious functions, and private parties. Custom menus and professional service in Madurai.">
+    <link rel="canonical" href="https://maduraicatering.com/events.html">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Events & Catering Packages - Madurai Catering">
+    <meta property="og:description" content="Professional catering services for all types of events in Madurai. Custom packages available.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1200&h=630&fit=crop">
+    <meta property="og:url" content="https://maduraicatering.com/events.html">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-maroon': '#8B0000',
+                        'brand-gold': '#FFD166',
+                        'brand-ivory': '#FFF8F0',
+                        'brand-charcoal': '#1F2937',
+                        'brand-green': '#16A34A'
+                    },
+                    fontFamily: {
+                        'display': ['Playfair Display', 'serif'],
+                        'body': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Event Catering Services",
+        "description": "Professional catering services for weddings, corporate events, religious functions, and private parties",
+        "provider": {
+            "@type": "Restaurant",
+            "name": "Madurai Catering"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Madurai"
+        },
+        "offers": [
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Wedding Catering"
+                },
+                "priceRange": "₹₹₹"
+            }
+        ]
+    }
+    </script>
+</head>
+<body class="font-body bg-brand-ivory text-brand-charcoal">
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand text-brand-maroon font-display font-bold text-2xl" href="index.html">
+                Madurai Catering
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvas">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title font-display text-brand-maroon">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-brand-green text-white px-4 py-2 rounded-full font-semibold" onclick="openBookingModal()">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-24 bg-gradient-to-r from-brand-maroon to-red-900 text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1 class="font-display text-5xl md:text-6xl font-bold mb-4">
+                        Event Catering Packages
+                    </h1>
+                    <p class="text-xl opacity-90 mb-8">
+                        From intimate gatherings to grand celebrations, we create memorable dining experiences 
+                        with authentic Madurai flavors for every special occasion
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <a href="#weddings" class="btn btn-lg bg-brand-gold text-brand-charcoal px-6 py-3 rounded-full font-semibold">
+                            Wedding Packages
+                        </a>
+                        <a href="#corporate" class="btn btn-lg btn-outline-light px-6 py-3 rounded-full font-semibold">
+                            Corporate Events
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wedding Catering Section -->
+    <section id="weddings" class="py-16 bg-white">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-4xl font-bold text-brand-maroon mb-4">
+                    Wedding Catering Packages
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Make your special day unforgettable with our traditional wedding feast packages
+                </p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Small Wedding Package -->
+                <div class="col-lg-4">
+                    <div class="package-card bg-brand-ivory rounded-2xl p-6 shadow-lg hover-lift h-100">
+                        <div class="package-header text-center mb-6">
+                            <h3 class="font-display text-2xl font-bold text-brand-maroon mb-2">Intimate Wedding</h3>
+                            <p class="text-gray-600">Perfect for close family celebrations</p>
+                            <div class="price-tag bg-brand-gold text-brand-charcoal px-4 py-2 rounded-full font-bold text-xl mt-4 inline-block">
+                                ₹450 - ₹650 / person
+                            </div>
+                        </div>
+                        
+                        <div class="package-details">
+                            <h4 class="font-semibold text-brand-maroon mb-3">Guest Capacity: 50 - 200</h4>
+                            
+                            <h5 class="font-semibold mb-2">Menu Highlights:</h5>
+                            <ul class="list-unstyled mb-4">
+                                <li>✓ Welcome drink</li>
+                                <li>✓ 4 Signature non-veg dishes</li>
+                                <li>✓ 2 Veg dishes</li>
+                                <li>✓ Mutton/Chicken Biryani</li>
+                                <li>✓ Traditional sweets & desserts</li>
+                                <li>✓ Fresh juices & beverages</li>
+                            </ul>
+                            
+                            <h5 class="font-semibold mb-2">Services Included:</h5>
+                            <ul class="list-unstyled mb-4">
+                                <li>✓ Professional service staff</li>
+                                <li>✓ Eco-friendly crockery</li>
+                                <li>✓ Setup & cleanup</li>
+                                <li>✓ Buffet presentation</li>
+                            </ul>
+                            
+                            <div class="text-center">
+                                <button class="btn bg-brand-green text-white px-6 py-2 rounded-full font-semibold" 
+                                        onclick="openBookingModal('intimate-wedding')">
+                                    Book This Package
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Medium Wedding Package -->
+                <div class="col-lg-4">
+                    <div class="package-card bg-white rounded-2xl p-6 shadow-lg hover-lift h-100 border-3 border-brand-gold">
+                        <div class="package-header text-center mb-6">
+                            <span class="badge bg-brand-gold text-brand-charcoal px-3 py-1 mb-2">Most Popular</span>
+                            <h3 class="font-display text-2xl font-bold text-brand-maroon mb-2">Grand Wedding</h3>
+                            <p class="text-gray-600">Perfect for traditional grand celebrations</p>
+                            <div class="price-tag bg-brand-maroon text-white px-4 py-2 rounded-full font-bold text-xl mt-4 inline-block">
+                                ₹550 - ₹750 / person
+                            </div>
+                        </div>
+                        
+                        <div class="package-details">
+                            <h4 class="font-semibold text-brand-maroon mb-3">Guest Capacity: 200 - 500</h4>
+                            
+                            <h5 class="font-semibold mb-2">Menu Highlights:</h5>
+                            <ul class="list-unstyled mb-4">
+                                <li>✓ Welcome drink + snacks</li>
+                                <li>✓ 6 Signature non-veg dishes</li>
+                                <li>✓ 3 Veg dishes</li>
+                                <li>✓ Premium Mutton Biryani</li>
+                                <li>✓ Live Kari Dosa counter</li>
+                                <li>✓ Traditional sweets & ice cream</li>
+                                <li>✓ Fresh juices & soft drinks</li>
+                            </ul>
+                            
+                            <h5 class="font-semibold mb-2">Services Included:</h5>
+                            <ul class="list-unstyled mb-4">
+                                <li>✓ Professional service team</li>
+                                <li>✓ Premium crockery & cutlery</li>
+                                <li>✓ Decorative food presentation</li>
+                                <li>✓ Live counter chef</li>
+                                <li>✓ Complete setup & cleanup</li>
+                            </ul>
+                            
+                            <div class="text-center">
+                                <button class="btn bg-brand-green text-white px-6 py-2 rounded-full font-semibold" 
+                                        onclick="openBookingModal('grand-wedding')">
+                                    Book This Package
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Luxury Wedding Package -->
+                <div class="col-lg-4">
+                    <div class="package-card bg-gradient-to-b from-brand-gold/20 to-brand-ivory rounded-2xl p-6 shadow-lg hover-lift h-100">
+                        <div class="package-header text-center mb-6">
+                            <h3 class="font-display text-2xl font-bold text-brand-maroon mb-2">Royal Wedding</h3>
+                            <p class="text-gray-600">Ultimate luxury wedding experience</p>
+                            <div class="price-tag bg-brand-maroon text-white px-4 py-2 rounded-full font-bold text-xl mt-4 inline-block">
+                                ₹750 - ₹1200 / person
+                            </div>
+                        </div>
+                        
+                        <div class="package-details">
+                            <h4 class="font-semibold text-brand-maroon mb-3">Guest Capacity: 500+</h4>
+                            
+                            <h5 class="font-semibold mb-2">Menu Highlights:</h5>
+                            <ul class="list-unstyled mb-4">
+                                <li>✓ Premium welcome cocktails</li>
+                                <li>✓ 8+ Signature dishes</li>
+                                <li>✓ 4 Veg gourmet options</li>
+                                <li>✓ Multiple live counters</li>
+                                <li>✓ Seafood specialties</li>
+                                <li>✓ Dessert station</li>
+                                <li>✓ Premium beverages</li>
+                            </ul>
+                            
+                            <h5 class="font-semibold mb-2">Luxury Services:</h5>
+                            <ul class="list-unstyled mb-4">
+                                <li>✓ White glove service</li>
+                                <li>✓ Premium tableware</li>
+                                <li>✓ Multiple live stations</li>
+                                <li>✓ Dedicated event coordinator</li>
+                                <li>✓ Photography-ready presentation</li>
+                            </ul>
+                            
+                            <div class="text-center">
+                                <button class="btn bg-brand-green text-white px-6 py-2 rounded-full font-semibold" 
+                                        onclick="openBookingModal('royal-wedding')">
+                                    Book This Package
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Corporate Events Section -->
+    <section id="corporate" class="py-16 bg-gray-50">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-4xl font-bold text-brand-maroon mb-4">
+                    Corporate Event Catering
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Professional catering solutions for corporate meetings, conferences, and company celebrations
+                </p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Business Lunch Package -->
+                <div class="col-lg-6">
+                    <div class="package-card bg-white rounded-2xl p-6 shadow-lg hover-lift h-100">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop" 
+                                     alt="Corporate lunch setup" 
+                                     class="w-100 h-100 object-cover rounded-2xl" 
+                                     loading="lazy">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="p-4">
+                                    <h3 class="font-display text-2xl font-bold text-brand-maroon mb-3">Business Meetings</h3>
+                                    <p class="text-gray-600 mb-3">
+                                        Professional lunch boxes and buffet options for corporate meetings, 
+                                        conferences, and training sessions.
+                                    </p>
+                                    <ul class="list-unstyled mb-4">
+                                        <li>✓ Individual lunch boxes available</li>
+                                        <li>✓ Buffet style for larger groups</li>
+                                        <li>✓ Vegetarian options included</li>
+                                        <li>✓ Quick service setup</li>
+                                    </ul>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-xl font-bold text-brand-gold">₹150 - ₹300 / person</span>
+                                        <button class="btn bg-brand-green text-white px-4 py-2 rounded-full font-semibold" 
+                                                onclick="openBookingModal('corporate-lunch')">
+                                            Book Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Corporate Celebration -->
+                <div class="col-lg-6">
+                    <div class="package-card bg-white rounded-2xl p-6 shadow-lg hover-lift h-100">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=400&h=300&fit=crop" 
+                                     alt="Corporate celebration catering" 
+                                     class="w-100 h-100 object-cover rounded-2xl" 
+                                     loading="lazy">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="p-4">
+                                    <h3 class="font-display text-2xl font-bold text-brand-maroon mb-3">Corporate Celebrations</h3>
+                                    <p class="text-gray-600 mb-3">
+                                        Company parties, product launches, and milestone celebrations 
+                                        with impressive presentation.
+                                    </p>
+                                    <ul class="list-unstyled mb-4">
+                                        <li>✓ Premium presentation</li>
+                                        <li>✓ Live cooking stations</li>
+                                        <li>✓ Cocktail & appetizer service</li>
+                                        <li>✓ Professional staff uniform</li>
+                                    </ul>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-xl font-bold text-brand-gold">₹400 - ₹800 / person</span>
+                                        <button class="btn bg-brand-green text-white px-4 py-2 rounded-full font-semibold" 
+                                                onclick="openBookingModal('corporate-celebration')">
+                                            Book Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Religious Functions Section -->
+    <section id="religious" class="py-16 bg-white">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-4xl font-bold text-brand-maroon mb-4">
+                    Religious Function Catering
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Respectful and appropriate catering for religious ceremonies and sacred occasions
+                </p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="package-card bg-brand-ivory rounded-2xl p-6 shadow-lg hover-lift h-100">
+                        <h3 class="font-display text-2xl font-bold text-brand-maroon mb-4 text-center">
+                            Temple Functions & Festivals
+                        </h3>
+                        <div class="row g-4 mb-4">
+                            <div class="col-6">
+                                <img src="https://images.unsplash.com/photo-1604085572504-a392ddf0d86a?w=400&h=300&fit=crop" 
+                                     alt="Temple function catering" 
+                                     class="w-100 rounded-xl" 
+                                     loading="lazy">
+                            </div>
+                            <div class="col-6">
+                                <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop" 
+                                     alt="Traditional feast" 
+                                     class="w-100 rounded-xl" 
+                                     loading="lazy">
+                            </div>
+                        </div>
+                        <ul class="list-unstyled mb-4">
+                            <li><strong>Appropriate Menu Segregation:</strong></li>
+                            <li>✓ Separate veg and non-veg serving areas</li>
+                            <li>✓ Dedicated cooking equipment</li>
+                            <li>✓ Traditional banana leaf service option</li>
+                            <li>✓ Prasadam distribution service</li>
+                        </ul>
+                        <div class="text-center">
+                            <span class="text-xl font-bold text-brand-gold d-block mb-3">₹250 - ₹450 / person</span>
+                            <button class="btn bg-brand-green text-white px-6 py-2 rounded-full font-semibold" 
+                                    onclick="openBookingModal('religious-function')">
+                                Book Religious Catering
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="package-card bg-white rounded-2xl p-6 shadow-lg hover-lift h-100">
+                        <h3 class="font-display text-2xl font-bold text-brand-maroon mb-4 text-center">
+                            House Warming & Ceremonies
+                        </h3>
+                        <div class="row g-4 mb-4">
+                            <div class="col-6">
+                                <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop" 
+                                     alt="House warming ceremony" 
+                                     class="w-100 rounded-xl" 
+                                     loading="lazy">
+                            </div>
+                            <div class="col-6">
+                                <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&h=300&fit=crop" 
+                                     alt="Traditional food service" 
+                                     class="w-100 rounded-xl" 
+                                     loading="lazy">
+                            </div>
+                        </div>
+                        <ul class="list-unstyled mb-4">
+                            <li><strong>Complete Ceremony Support:</strong></li>
+                            <li>✓ Traditional cooking methods</li>
+                            <li>✓ Flexible timing arrangements</li>
+                            <li>✓ Custom menu based on traditions</li>
+                            <li>✓ Experienced staff familiar with customs</li>
+                        </ul>
+                        <div class="text-center">
+                            <span class="text-xl font-bold text-brand-gold d-block mb-3">₹200 - ₹400 / person</span>
+                            <button class="btn bg-brand-green text-white px-6 py-2 rounded-full font-semibold" 
+                                    onclick="openBookingModal('house-ceremony')">
+                                Book Ceremony Catering
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Private Parties Section -->
+    <section id="private" class="py-16 bg-gray-50">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-4xl font-bold text-brand-maroon mb-4">
+                    Private Party Catering
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Birthday parties, anniversaries, and intimate celebrations made special with authentic flavors
+                </p>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-8">
+                    <div class="package-card bg-white rounded-2xl overflow-hidden shadow-lg hover-lift">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600&h=400&fit=crop" 
+                                     alt="Birthday party catering" 
+                                     class="w-100 h-100 object-cover" 
+                                     loading="lazy">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="p-6">
+                                    <h3 class="font-display text-2xl font-bold text-brand-maroon mb-3">
+                                        Birthday & Anniversary Parties
+                                    </h3>
+                                    <p class="text-gray-600 mb-4">
+                                        Make your special celebrations memorable with our personalized catering service. 
+                                        Perfect for intimate gatherings and milestone celebrations.
+                                    </p>
+                                    
+                                    <div class="row mb-4">
+                                        <div class="col-6">
+                                            <h5 class="font-semibold text-brand-maroon mb-2">Package Includes:</h5>
+                                            <ul class="list-unstyled">
+                                                <li>✓ Custom menu</li>
+                                                <li>✓ Birthday cake service</li>
+                                                <li>✓ Party setup</li>
+                                                <li>✓ Complete cleanup</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6">
+                                            <h5 class="font-semibold text-brand-maroon mb-2">Options:</h5>
+                                            <ul class="list-unstyled">
+                                                <li>✓ Home service</li>
+                                                <li>✓ Venue catering</li>
+                                                <li>✓ Kids menu available</li>
+                                                <li>✓ Theme-based presentation</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-xl font-bold text-brand-gold">₹300 - ₹600 / person</span>
+                                        <button class="btn bg-brand-green text-white px-4 py-2 rounded-full font-semibold" 
+                                                onclick="openBookingModal('private-party')">
+                                            Book Party Catering
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-4xl font-bold text-brand-maroon mb-4">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Common questions about our catering services and packages
+                </p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="faqAccordion">
+                        <!-- FAQ 1 -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded-xl">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button font-semibold text-brand-maroon bg-brand-ivory rounded-xl" 
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    What is the minimum number of guests for catering?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Our minimum catering requirement is 25 guests for most packages. For smaller intimate gatherings, 
+                                    we offer special arrangements with a minimum order value. Corporate lunch boxes can be arranged 
+                                    for as few as 10 people.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded-xl">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed font-semibold text-brand-maroon bg-brand-ivory rounded-xl" 
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    How far in advance should I book?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We recommend booking at least 2-3 weeks in advance for regular events. For wedding catering, 
+                                    please book 4-6 weeks ahead to ensure availability and proper planning. Rush orders may be 
+                                    accommodated based on availability with an additional fee.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded-xl">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed font-semibold text-brand-maroon bg-brand-ivory rounded-xl" 
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Do you provide vegetarian options?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes! While we specialize in non-vegetarian Madurai cuisine, all our packages include 
+                                    traditional vegetarian dishes. We can also create completely vegetarian menus and ensure 
+                                    separate preparation areas for religious functions when required.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded-xl">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed font-semibold text-brand-maroon bg-brand-ivory rounded-xl" 
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    What areas do you serve?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We provide catering services throughout Madurai city and surrounding areas up to 50km. 
+                                    For events beyond this range, additional transportation charges may apply. We also cater 
+                                    to destination events with advance planning.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded-xl">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed font-semibold text-brand-maroon bg-brand-ivory rounded-xl" 
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    Can you accommodate food allergies and dietary restrictions?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutely! Please inform us about any food allergies or dietary restrictions when booking. 
+                                    We can modify our recipes and ensure separate preparation for allergen-free dishes. Common 
+                                    accommodations include dairy-free, nut-free, and gluten-sensitive options.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 6 -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded-xl">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed font-semibold text-brand-maroon bg-brand-ivory rounded-xl" 
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                                    What is included in the service staff?
+                                </button>
+                            </h2>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Our service staff includes trained servers, kitchen assistants for food warming and presentation, 
+                                    and cleanup crew. For live counters, we provide specialized chefs. Staff-to-guest ratios vary 
+                                    by package: 1:25 for basic service, 1:15 for premium service.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-brand-gold to-yellow-400 text-brand-charcoal">
+        <div class="container text-center">
+            <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">
+                Ready to Plan Your Event?
+            </h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">
+                Let our experienced team help you create the perfect menu and service plan for your special occasion. 
+                Contact us for a free consultation and customized quote.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="btn btn-lg bg-brand-maroon text-white px-8 py-3 rounded-full font-semibold hover-scale" onclick="openBookingModal()">
+                    Get Custom Quote
+                </button>
+                <a href="contact.html" class="btn btn-lg btn-outline-brand-charcoal px-8 py-3 rounded-full font-semibold hover-scale">
+                    Schedule Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-charcoal text-white py-16">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="font-display text-2xl font-bold text-brand-gold mb-4">Madurai Catering</h3>
+                    <p class="mb-4 opacity-90">
+                        Authentic Madurai flavors for your special occasions. Premium catering services 
+                        with traditional recipes and modern presentation.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3 hover:text-brand-gold text-2xl">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-white me-3 hover:text-brand-gold text-2xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white me-3 hover:text-brand-gold text-2xl">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/919876543210" class="text-white hover:text-brand-gold text-2xl">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2">
+                    <h4 class="font-semibold text-brand-gold mb-4">Event Types</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#weddings" class="text-white/80 hover:text-brand-gold text-decoration-none">Weddings</a></li>
+                        <li><a href="#corporate" class="text-white/80 hover:text-brand-gold text-decoration-none">Corporate</a></li>
+                        <li><a href="#religious" class="text-white/80 hover:text-brand-gold text-decoration-none">Religious</a></li>
+                        <li><a href="#private" class="text-white/80 hover:text-brand-gold text-decoration-none">Private Parties</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h4 class="font-semibold text-brand-gold mb-4">Contact Info</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="fas fa-map-marker-alt text-brand-gold me-2"></i>
+                            123 Anna Nagar<br>
+                            <span class="ms-4">Madurai, Tamil Nadu 625020</span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone text-brand-gold me-2"></i>
+                            <a href="tel:+919876543210" class="text-white text-decoration-none">+91 98765 43210</a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-envelope text-brand-gold me-2"></i>
+                            <a href="mailto:info@maduraicatering.com" class="text-white text-decoration-none">info@maduraicatering.com</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h4 class="font-semibold text-brand-gold mb-4">Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white/80 hover:text-brand-gold text-decoration-none">Home</a></li>
+                        <li><a href="menu.html" class="text-white/80 hover:text-brand-gold text-decoration-none">Menu</a></li>
+                        <li><a href="gallery.html" class="text-white/80 hover:text-brand-gold text-decoration-none">Gallery</a></li>
+                        <li><a href="about.html" class="text-white/80 hover:text-brand-gold text-decoration-none">About</a></li>
+                        <li><a href="contact.html" class="text-white/80 hover:text-brand-gold text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-8 opacity-30">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 opacity-75">
+                        © 2024 Madurai Catering. All rights reserved. | GST: 33XXXXX1234X1ZX
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white/80 hover:text-brand-gold text-decoration-none me-4">Privacy Policy</a>
+                    <a href="#" class="text-white/80 hover:text-brand-gold text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/919876543210?text=Hello! I'm interested in your event catering packages." 
+           class="whatsapp-btn" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="notification-badge">1</span>
+        </a>
+    </div>
+
+    <!-- Include modals from index.html -->
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title font-display text-2xl font-bold text-brand-maroon" id="bookingModalLabel">
+                        Book Your Event
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="bookingForm" onsubmit="submitBooking(event)">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="customerName" class="form-label font-semibold">Full Name *</label>
+                                <input type="text" class="form-control" id="customerName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="customerPhone" class="form-label font-semibold">Phone Number *</label>
+                                <input type="tel" class="form-control" id="customerPhone" 
+                                       pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="customerEmail" class="form-label font-semibold">Email *</label>
+                                <input type="email" class="form-control" id="customerEmail" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="eventType" class="form-label font-semibold">Event Type *</label>
+                                <select class="form-select" id="eventType" required>
+                                    <option value="">Select Event Type</option>
+                                    <option value="wedding">Wedding</option>
+                                    <option value="corporate">Corporate Event</option>
+                                    <option value="religious">Religious Function</option>
+                                    <option value="birthday">Birthday Party</option>
+                                    <option value="private">Private Party</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="eventDate" class="form-label font-semibold">Event Date *</label>
+                                <input type="date" class="form-control" id="eventDate" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="guestCount" class="form-label font-semibold">Number of Guests *</label>
+                                <input type="number" class="form-control" id="guestCount" min="10" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="eventLocation" class="form-label font-semibold">Event Location *</label>
+                                <textarea class="form-control" id="eventLocation" rows="2" 
+                                          placeholder="Full address with landmarks" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <label for="packagePreference" class="form-label font-semibold">Package Preference</label>
+                                <select class="form-select" id="packagePreference">
+                                    <option value="">Select Package (Optional)</option>
+                                    <option value="intimate-wedding">Intimate Wedding</option>
+                                    <option value="grand-wedding">Grand Wedding</option>
+                                    <option value="royal-wedding">Royal Wedding</option>
+                                    <option value="corporate-lunch">Corporate Lunch</option>
+                                    <option value="corporate-celebration">Corporate Celebration</option>
+                                    <option value="religious-function">Religious Function</option>
+                                    <option value="private-party">Private Party</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="specialRequests" class="form-label font-semibold">Special Requests</label>
+                                <textarea class="form-control" id="specialRequests" rows="3" 
+                                          placeholder="Any special dietary requirements, live counters, or additional services needed"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex justify-content-end gap-3 mt-4">
+                            <button type="button" class="btn btn-outline-secondary px-4 py-2" data-bs-dismiss="modal">
+                                Cancel
+                            </button>
+                            <button type="submit" class="btn bg-brand-green text-white px-6 py-2 font-semibold">
+                                Submit Booking Request
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Toast -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="successToast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    <i class="fas fa-check-circle me-2"></i>
+                    <span id="toastMessage">Success message here</span>
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
